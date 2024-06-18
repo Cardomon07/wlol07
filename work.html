@@ -1,37 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="signup.html">
-    <title>Info</title>
+    <title>Welcome to My Webpage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #282c34;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom right, #283c86, #45a247);
             color: #ffffff;
             text-align: center;
             padding: 50px;
             margin: 0;
         }
         .intro-container {
-            background-color: #333;
-            padding: 20px;
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 40px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             max-width: 600px;
             margin: 0 auto;
             opacity: 0;
             transform: translateY(50px);
-            animation: fadeInUp 1s forwards;
+            animation: fadeInUp 1.5s forwards;
         }
         h1 {
             color: #61dafb;
-            margin-bottom: 10px;
-            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-size: 2.8rem;
+            transition: color 0.3s;
+        }
+        h1:hover {
+            color: #21a1f1;
         }
         p {
             color: #bbb;
             line-height: 1.6;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+        }
+        .intro-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(to right, #61dafb, #21a1f1);
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.6rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+        .intro-button:hover {
+            background: linear-gradient(to right, #21a1f1, #61dafb);
         }
 
         @keyframes fadeInUp {
@@ -39,60 +58,17 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        
-           stylish-button {
-            display: inline-block;
-            padding: 12px 24px;
-            font-size: 16px;
-            color: #6200ff;
-            background-color: #3498db;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-             height: 1000px ;
-width: 60px;
-
         }
-button{
-    height: 1500px;
-}
-        stylish-buttonhover {
-            background-color: #2980b9;
-        }
-
-        stylish-buttonactive {
-            background-color: #1c5988;
-        }
-        i{
-height: 1140px;
-        }
-        
-    }
-
     </style>
 </head>
 <body>
     <div class="intro-container">
-        <h1>Welcome
-          <br>
-          to
-          <br>
-          Cardomon07!</h1>
+        <h1>Welcome to My Webpage!</h1>
         <p>
-            This is a simple introduction to let you know a bit about what to expect on this site. 
-            Here, you'll find Gloden , V-star , V-Max , GX , V , and Custom Packs.
-            I hope you enjoy your time here and find everything you need.
-        </p>
-          <p>-Admin(Devansh*)</p>
-        </div>
-          <br> <br>
-          <div class="i">
-    <button type="button" class="stylish-button"><a href="m.htm">.<br>
-      .                 <h2>I Understand </h2>               .
-        <br>
-.
-    </a></button>
-</div>
+            This is a simple introduction to let you know a bit about what to expect on this site. Here, you'll find Gloden , V-star , V-Max , GX , V , and Custom Packs. I hope you enjoy your time here and find everything you need.
+
+-Admin(Devansh*) </p>
+        <a href="https://cardomon07.github.io/wlol07/m.htm" class="intro-button">I Understand</a>
+    </div>
 </body>
 </html>
