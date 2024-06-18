@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e2730 ; /* Light background color */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .signup-container {
+            background-color: #ffffff; /* White background for the form */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 400px;
+            text-align: center;
+            margin: 0 auto;
+            transition: transform 0.3s ease;
+        }
+
+        .signup-container:hover {
+            transform: scale(1.02); /* Slight zoom effect on hover */
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd; /* Light gray border */
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease;
+            color: #333; /* Text color */
+        }
+
+        input:focus {
+            border-color: #4A90E2; /* Blue border on focus */
+            outline: none;
+        }
+
+        .stylish-button {
+            display: inline-block; /* Align button horizontally */
+            padding: 14px 28px; /* Set padding for button */
+            font-size: 16px; /* Set font size */
+            color: #ffffff; /* Set text color to white */
+            background-color: #4A90E2; /* Blue background */
+            border: none; /* Remove default border */
+            border-radius: 8px; /* Round corners of button */
+            cursor: pointer; /* Change cursor to pointer on hover */
+            transition: background-color 0.3s ease; /* Smooth background color transition */
+        }
+
+        .stylish-button:hover {
+            background-color: #357ABD; /* Darker blue on hover */
+        }
+
+        .error-message {
+            color: #FF0000; /* Red text for error messages */
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    .name{
+        align-items:flex-start;
+    }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <div class="name">
+        <h4>Cardomon07</h4>
+    </div>
+        <h2>Signup</h2>
+        <form id="signupForm">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button class="stylish-button" type="button" id="signupButton">Signup</button>
+            <p class="error-message" id="errorMessage"></p> <!-- Display error message -->
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("signupButton").addEventListener("click", function() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var errorMessage = document.getElementById("errorMessage");
+
+            if (username && email && password) {
+                // Simulate successful signup and redirect (replace with actual signup logic)
+                window.location.href = "https://cardomon07.github.io/wlol07/works.html";
+            } else {
+                // Display error message for incomplete signup
+                errorMessage.textContent = "Please fill out all fields.";
+            }
+        });
+    </script>
+</body>
+</html>
